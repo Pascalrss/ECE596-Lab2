@@ -1,0 +1,32 @@
+[0.807s] Invoking command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/build --no-deps symlink_data
+[1.015s] running develop
+[1.119s] running egg_info
+[1.122s] creating rrbot_description.egg-info
+[1.136s] writing rrbot_description.egg-info/PKG-INFO
+[1.137s] writing dependency_links to rrbot_description.egg-info/dependency_links.txt
+[1.137s] writing requirements to rrbot_description.egg-info/requires.txt
+[1.138s] writing top-level names to rrbot_description.egg-info/top_level.txt
+[1.138s] writing manifest file 'rrbot_description.egg-info/SOURCES.txt'
+[1.164s] reading manifest file 'rrbot_description.egg-info/SOURCES.txt'
+[1.165s] writing manifest file 'rrbot_description.egg-info/SOURCES.txt'
+[1.178s] running build_ext
+[1.178s] Creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/lib/python3.12/site-packages/rrbot-description.egg-link (link to .)
+[1.179s] 
+[1.179s] Installed /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description
+[1.179s] running symlink_data
+[1.180s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/ament_index
+[1.180s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/ament_index/resource_index
+[1.180s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/ament_index/resource_index/packages
+[1.180s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/resource/rrbot_description -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/ament_index/resource_index/packages
+[1.180s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/package.xml -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description
+[1.181s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/config
+[1.181s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/config/rrbot_dimensions.yaml -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/config
+[1.182s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/launch
+[1.183s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/launch/view_rrbot.launch.py -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/launch
+[1.183s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/rviz
+[1.183s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/rviz/rrbot_default.rviz -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/rviz
+[1.184s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/urdf
+[1.184s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/urdf/rrbot.urdf.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/urdf
+[1.184s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/urdf/rrbot_macro.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/urdf
+[1.184s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/urdf/materials.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/share/rrbot_description/urdf
+[1.215s] Invoked command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/build --no-deps symlink_data

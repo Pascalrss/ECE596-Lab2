@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating table_description.egg-info
+writing table_description.egg-info/PKG-INFO
+writing dependency_links to table_description.egg-info/dependency_links.txt
+writing requirements to table_description.egg-info/requires.txt
+writing top-level names to table_description.egg-info/top_level.txt
+writing manifest file 'table_description.egg-info/SOURCES.txt'
+reading manifest file 'table_description.egg-info/SOURCES.txt'
+writing manifest file 'table_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/lib/python3.12/site-packages/table-description.egg-link (link to .)
+
+Installed /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description
+running symlink_data
+creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/ament_index
+creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/ament_index/resource_index
+creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/ament_index/resource_index/packages
+symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/resource/table_description -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/ament_index/resource_index/packages
+symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/package.xml -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description

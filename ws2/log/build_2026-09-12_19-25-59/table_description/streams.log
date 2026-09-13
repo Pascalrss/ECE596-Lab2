@@ -1,0 +1,23 @@
+[1.635s] Invoking command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/build --no-deps symlink_data
+[2.055s] running develop
+[2.238s] running egg_info
+[2.255s] writing table_description.egg-info/PKG-INFO
+[2.257s] writing dependency_links to table_description.egg-info/dependency_links.txt
+[2.257s] writing requirements to table_description.egg-info/requires.txt
+[2.261s] writing top-level names to table_description.egg-info/top_level.txt
+[2.292s] reading manifest file 'table_description.egg-info/SOURCES.txt'
+[2.293s] writing manifest file 'table_description.egg-info/SOURCES.txt'
+[2.316s] running build_ext
+[2.317s] Creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/lib/python3.12/site-packages/table-description.egg-link (link to .)
+[2.317s] 
+[2.317s] Installed /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description
+[2.318s] running symlink_data
+[2.321s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/config
+[2.321s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/launch
+[2.321s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/launch/table.launch.py -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/launch
+[2.323s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/rviz
+[2.323s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/urdf
+[2.323s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/urdf/table_macro.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/urdf
+[2.323s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/urdf/table.urdf.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/urdf
+[2.323s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/urdf/materials.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/share/table_description/urdf
+[2.399s] Invoked command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/table_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/table_description/build --no-deps symlink_data

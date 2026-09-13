@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+launch/table.launch.py
+resource/table_description
+table_description/__init__.py
+table_description.egg-info/PKG-INFO
+table_description.egg-info/SOURCES.txt
+table_description.egg-info/dependency_links.txt
+table_description.egg-info/requires.txt
+table_description.egg-info/top_level.txt
+table_description.egg-info/zip-safe
+urdf/materials.xacro
+urdf/table.urdf.xacro
+urdf/table_macro.xacro
