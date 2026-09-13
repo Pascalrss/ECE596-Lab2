@@ -1,0 +1,28 @@
+[1.216s] Invoking command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/build --no-deps symlink_data
+[1.433s] running develop
+[1.572s] running egg_info
+[1.572s] creating ur3e_on_table.egg-info
+[1.585s] writing ur3e_on_table.egg-info/PKG-INFO
+[1.585s] writing dependency_links to ur3e_on_table.egg-info/dependency_links.txt
+[1.586s] writing requirements to ur3e_on_table.egg-info/requires.txt
+[1.586s] writing top-level names to ur3e_on_table.egg-info/top_level.txt
+[1.586s] writing manifest file 'ur3e_on_table.egg-info/SOURCES.txt'
+[1.609s] reading manifest file 'ur3e_on_table.egg-info/SOURCES.txt'
+[1.609s] writing manifest file 'ur3e_on_table.egg-info/SOURCES.txt'
+[1.627s] running build_ext
+[1.627s] Creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/lib/python3.12/site-packages/ur3e-on-table.egg-link (link to .)
+[1.628s] 
+[1.628s] Installed /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table
+[1.628s] running symlink_data
+[1.628s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ament_index
+[1.628s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ament_index/resource_index
+[1.629s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ament_index/resource_index/packages
+[1.629s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/resource/ur3e_on_table -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ament_index/resource_index/packages
+[1.629s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/package.xml -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table
+[1.629s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table/config
+[1.636s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table/launch
+[1.636s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/launch/view_ur3e_on_table.launch.py -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table/launch
+[1.636s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table/rviz
+[1.637s] creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table/urdf
+[1.638s] symbolically linking /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/urdf/ur3e_on_table.urdf.xacro -> /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/share/ur3e_on_table/urdf
+[1.676s] Invoked command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/build --no-deps symlink_data

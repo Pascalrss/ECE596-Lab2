@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="table" params="prefix parent *origin">
+
+    <!-- Constants for robot dimensions -->
+    <xacro:property name="table_length" value="4" />
+    <xacro:property name="table_width" value="4" />
+    <xacro:property name="table_height" value="1" />
+    <xacro:property name="table_thickness" value="0.05" />
+    <!-- Gefixt: $ hinzugefügt -->
+    <xacro:property name="leg_length" value="${table_height - table_thickness}" />
+    <xacro:property name="leg_radius" value="0.05" />
+
+    <!-- Offset from the edge of the table top to the center of each leg, ensuring they stay tangent -->
+    <xacro:property name="leg_x_offset" value="${table_length / 2 - leg_radius}" />
+    <xacro:property name="leg_y_offset" value="${table_width / 2 - leg_radius}" />
+
+    <!-- Base Joint linking to parent -->
+    <joint name="${prefix}table_base_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="${prefix}top" />
+    </joint>
+
+    <!-- Table Top Link -->
+    <link name="${prefix}top">
+      <visual>
+        <origin xyz="0 0 ${-table_thickness/2}" rpy="0 0 0" />
+        <geometry>
+          <box size="${table_length} ${table_width} ${table_thickness}" />
+        </geometry>
+        <material name="brown">
+          <color rgba="0.54 0.27 0.07 1.0" />
+        </material>
+      </visual>
+    </link>
+
+    <!-- Macro for Table Legs -->
+    <xacro:macro name="table_leg" params="suffix x_dir y_dir">
+      <joint name="${prefix}leg_${suffix}_joint" type="fixed">
+        <parent link="${prefix}top" />
+        <child link="${prefix}leg_${suffix}_link" />
+        <!-- Gefixt: Joint liegt direkt unter der Tischplatte -->
+        <origin xyz="${x_dir * leg_x_offset} ${y_dir * leg_y_offset} ${-table_thickness}" rpy="0 0 0" />
+      </joint>
+
+      <link name="${prefix}leg_${suffix}_link">
+        <visual>
+          <!-- Gefixt: -leg_length/2 damit das Bein von der Platte nach unten zum Boden (z=0) verläuft -->
+          <origin xyz="0 0 ${-leg_length / 2}" rpy="0 0 0" />
+          <geometry>
+            <cylinder radius="${leg_radius}" length="${leg_length}" />
+          </geometry>
+          <material name="light_grey">
+            <color rgba="0.8 0.8 0.8 1.0" />
+          </material>
+        </visual>
+      </link>
+    </xacro:macro>
+
+    <!-- Instantiate the four legs -->
+    <xacro:table_leg suffix="1"  x_dir="1"  y_dir="1" />
+    <xacro:table_leg suffix="2" x_dir="1"  y_dir="-1" />
+    <xacro:table_leg suffix="3"   x_dir="-1" y_dir="1" />
+    <xacro:table_leg suffix="4"  x_dir="-1" y_dir="-1" />
+
+  </xacro:macro>
+
+</robot>

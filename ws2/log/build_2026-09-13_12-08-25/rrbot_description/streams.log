@@ -1,0 +1,15 @@
+[1.923s] Invoking command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/build --no-deps symlink_data
+[2.165s] running develop
+[2.351s] running egg_info
+[2.379s] writing rrbot_description.egg-info/PKG-INFO
+[2.400s] writing dependency_links to rrbot_description.egg-info/dependency_links.txt
+[2.400s] writing requirements to rrbot_description.egg-info/requires.txt
+[2.401s] writing top-level names to rrbot_description.egg-info/top_level.txt
+[2.433s] reading manifest file 'rrbot_description.egg-info/SOURCES.txt'
+[2.435s] writing manifest file 'rrbot_description.egg-info/SOURCES.txt'
+[2.464s] running build_ext
+[2.476s] Creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/lib/python3.12/site-packages/rrbot-description.egg-link (link to .)
+[2.480s] 
+[2.480s] Installed /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description
+[2.480s] running symlink_data
+[2.522s] Invoked command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/rrbot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/rrbot_description/build --no-deps symlink_data

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="table" params="prefix parent *origin">
+
+    <!-- Table dimensions -->
+    <xacro:property name="table_length" value="2" />
+    <xacro:property name="table_width" value="1" />
+    <xacro:property name="table_height" value="1" />
+    <xacro:property name="table_thickness" value="0.05" />
+    <xacro:property name="leg_length" value="${table_height - table_thickness}" />
+    <xacro:property name="leg_radius" value="0.05" />
+
+    <!-- Leg offsets from center, kept tangent to the table edges -->
+    <xacro:property name="leg_x_offset" value="${table_length/2 - leg_radius}" />
+    <xacro:property name="leg_y_offset" value="${table_width/2 - leg_radius}" />
+
+    <!-- Fixed joint attaching the table to its parent frame -->
+    <joint name="${prefix}table_base_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}" />
+      <child link="${prefix}table_top_link" />
+    </joint>
+
+    <!-- Table top -->
+    <link name="${prefix}table_top_link">
+      <visual>
+        <origin xyz="0 0 ${table_height - table_thickness/2}" rpy="0 0 0" />
+        <geometry>
+          <box size="${table_length} ${table_width} ${table_thickness}" />
+        </geometry>
+        <material name="brown">
+          <color rgba="0.55 0.27 0.07 1.0" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${table_height - table_thickness/2}" rpy="0 0 0" />
+        <geometry>
+          <box size="${table_length} ${table_width} ${table_thickness}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Reusable leg macro: one cylinder per corner -->
+    <xacro:macro name="table_leg" params="suffix x_dir y_dir">
+      <joint name="${prefix}leg_${suffix}_joint" type="fixed">
+        <parent link="${prefix}table_top_link" />
+        <child link="${prefix}leg_${suffix}_link" />
+        <!-- Attach directly under the table top -->
+        <origin xyz="${x_dir * leg_x_offset} ${y_dir * leg_y_offset} ${table_height - table_thickness}" rpy="0 0 0" />
+      </joint>
+
+      <link name="${prefix}leg_${suffix}_link">
+        <visual>
+          <!-- Leg extends downward from the attach point to the floor -->
+          <origin xyz="0 0 ${-leg_length/2}" rpy="0 0 0" />
+          <geometry>
+            <cylinder radius="${leg_radius}" length="${leg_length}" />
+          </geometry>
+          <material name="light_grey">
+            <color rgba="0.8 0.8 0.8 1.0" />
+          </material>
+        </visual>
+        <collision>
+          <origin xyz="0 0 ${-leg_length/2}" rpy="0 0 0" />
+          <geometry>
+            <cylinder radius="${leg_radius}" length="${leg_length}" />
+          </geometry>
+        </collision>
+      </link>
+    </xacro:macro>
+
+    <!-- Four corners -->
+    <xacro:table_leg suffix="front_left"  x_dir="1"  y_dir="1" />
+    <xacro:table_leg suffix="front_right" x_dir="1"  y_dir="-1" />
+    <xacro:table_leg suffix="back_left"   x_dir="-1" y_dir="1" />
+    <xacro:table_leg suffix="back_right"  x_dir="-1" y_dir="-1" />
+
+  </xacro:macro>
+
+</robot>

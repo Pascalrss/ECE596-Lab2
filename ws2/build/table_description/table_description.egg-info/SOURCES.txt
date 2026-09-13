@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 launch/table.launch.py
 resource/table_description
+rviz/table_default.rviz
 table_description/__init__.py
 table_description.egg-info/PKG-INFO
 table_description.egg-info/SOURCES.txt

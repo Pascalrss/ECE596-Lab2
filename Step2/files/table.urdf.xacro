@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="table_robot">
+
+  <xacro:include filename="table_macro.xacro" />
+
+  <!-- Dummy root link so the table can be spawned in RViz/Gazebo -->
+  <link name="world" />
+
+  <!-- Instantiate the table, attached to the world frame at the origin -->
+  <xacro:table prefix="" parent="world">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:table>
+
+</robot>

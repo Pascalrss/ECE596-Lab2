@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<robot name="rrbot">
+
+  <!-- define the colors -->
+ <material name="brown">
+    <color rgba="0.54 0.27 0.07 1.0"/>
+</material>
+<material name="light_grey">
+    <color rgba="0.8 0.8 0.8 1.0"/>
+</material>
+  
+  <!-- create link fixed to the "world" -->
+  <link name="world" />
+
+  <!-- joint from "world" to "base_link"-->
+  <joint name="base_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 1" />
+    <parent link="world" />
+    <child link="Top_link" />
+  </joint>
+
+  <!-- Top Link -->
+  <link name="Top_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.025" />
+      <geometry>
+        <box size="2 1 0.05" />
+      </geometry>
+      <material name="brown" />
+    </visual>
+  </link>
+
+
+
+  <!-- Link 1 -->
+  <link name="leg1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.475" />
+      <geometry>
+        <cylinder radius="0.05" length="0.95" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+   <!-- Link 2-->
+  <link name="leg2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.475" />
+      <geometry>
+        <cylinder radius="0.05" length="0.95" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+   <!-- Link 3-->
+  <link name="leg3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.475" />
+      <geometry>
+        <cylinder radius="0.05" length="0.95" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+
+   <!-- Link 4-->
+  <link name="leg4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.475" />
+      <geometry>
+        <cylinder radius="0.05" length="0.95" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+
+
+    <!-- Joint 1 -->
+  <joint name="joint1" type="fixed">
+    <parent link="Top_link" />
+    <child link="leg1" />
+    <!-- offset by 5cm in y axis -->
+    <origin rpy="0 0 0" xyz="0.9 0.4 -0.05" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+
+     <!-- Joint 1 -->
+  <joint name="joint2" type="fixed">
+    <parent link="Top_link" />
+    <child link="leg2" />
+    <!-- offset by 5cm in y axis -->
+    <origin rpy="0 0 0" xyz="0.9 -0.4 -0.05" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+     <!-- Joint 1 -->
+  <joint name="joint3" type="fixed">
+    <parent link="Top_link" />
+    <child link="leg3" />
+    <!-- offset by 5cm in y axis -->
+    <origin rpy="0 0 0" xyz="-0.9 0.4 -0.05" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+     <!-- Joint 1 -->
+  <joint name="joint4" type="fixed">
+    <parent link="Top_link" />
+    <child link="leg4" />
+    <!-- offset by 5cm in y axis -->
+    <origin rpy="0 0 0" xyz="-0.9 -0.4 -0.05" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+
+</robot>

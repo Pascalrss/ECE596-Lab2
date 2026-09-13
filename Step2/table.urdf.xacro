@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="table_robot">
+
+
+  <!-- Materialien definieren -->
+  <material name="brown">
+    <color rgba="0.59 0.29 0.0 1.0"/>
+  </material>
+  <material name="light_grey">
+    <color rgba="0.8 0.8 0.8 1.0"/>
+  </material>
+  <!-- Include the table macro file -->
+  <xacro:include filename="table_macro.xacro" />
+
+  <!-- Dummy root link so the table can be spawned in RViz/Gazebo -->
+  <link name="world"/>
+
+  <!-- Instantiate the table macro, attached to the world frame at origin z=0 -->
+  <xacro:table prefix="" parent="world">
+    <origin xyz="0 0 1" rpy="0 0 0" />
+  </xacro:table>
+
+</robot>

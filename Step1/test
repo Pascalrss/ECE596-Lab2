@@ -1,0 +1,14 @@
+<link name="base_link">
+    <!-- more code will go here ... -->
+</link>
+
+<joint name="joint1" type="continuous">
+    <parent link="base_link" />
+    <child link="link1" />
+    <origin rpy="0 0 0" xyz="0 0.05 1.95" />
+    <axis xyz="0 1 0" />
+</joint>
+
+<link name="link1">
+    <!-- more code will go here ... -->
+</link>

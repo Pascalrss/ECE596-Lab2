@@ -1,0 +1,16 @@
+[1.088s] Invoking command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/build --no-deps symlink_data
+[1.352s] running develop
+[1.430s] running egg_info
+[1.444s] writing ur3e_on_table.egg-info/PKG-INFO
+[1.444s] writing dependency_links to ur3e_on_table.egg-info/dependency_links.txt
+[1.445s] writing requirements to ur3e_on_table.egg-info/requires.txt
+[1.446s] writing top-level names to ur3e_on_table.egg-info/top_level.txt
+[1.473s] reading manifest file 'ur3e_on_table.egg-info/SOURCES.txt'
+[1.478s] writing manifest file 'ur3e_on_table.egg-info/SOURCES.txt'
+[1.493s] running build_ext
+[1.494s] Creating /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/lib/python3.12/site-packages/ur3e-on-table.egg-link (link to .)
+[1.495s] 
+[1.495s] Installed /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table
+[1.496s] running symlink_data
+[1.496s] error: can't copy '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/urdf/view_ur3e_on_table.launch.py': doesn't exist or not a regular file
+[1.526s] Invoked command in '/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/install/ur3e_on_table/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur3e_on_table/build --no-deps symlink_data

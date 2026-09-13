@@ -1,0 +1,1 @@
+/home/osboxes/ece569-fall2026/ECE569-Lab2/ws2/build/ur_description/ament_cmake_core/ur_descriptionConfig.cmake
